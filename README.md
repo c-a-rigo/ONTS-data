@@ -5,16 +5,49 @@ The data is freely available to other researchers, who may use it to assess thei
 
 Please cite the following paper when using this data set:
 
-**[Name of the Paper and authors]**
-
+#### BibTex
+```bibtex
+@misc{ONTS-data,
+title = {Title},
+author = {Authors},
+url = {https://github.com/c-a-rigo/ONTS-data}
+}
+```
 To use this data set, you will need to have python installed on your computer. 
 
-Each example the following keys:
+Each example contains the following keys:
 
-+ T : an integer, representing the number of time units
-+ J: an integer representing the number of tasks
-+ resource: a list of T elements, representing the power availability for each time unit
-+
+### Example file
+The (T)\_(jobs).py file is a Python file containing the following data defining an instance:
 
+| Variable (Code) 	| Variable (Paper)	| Definition		|
+|-------------------|-------------------|-------------------|
+| J 				| $J$				| number of jobs
+| T 				| $T$				| time horizon
+| resource 		| $r_t$				| vector containing the available resource for each time instant
+| min_cpu_time 		| $t_j^{\min}$		| vector containing the minimum duration of each job
+| max_cpu_time 		| $t_j^{\max}$		| vector containing the maximum duration of each job
+| min_period_job 	| $p_j^{\min}$		| vector containing the minimum period for each job
+| max_period_job 	| $p_j^{\max}$		| vector containing the maximum period for each job
+| min_startup 		| $y_j^{\min}$		| vector containing the minimum number of startups for each job
+| max_startup 		| $y_j^{\max}$		| vector containing the maximum number of startups for each job
+| win_min 			| $w_j^{\min}$		| minimum time window for each job
+| win_max 			| $w_j^{\max}$		| maximum time window for each job
+| priority 			| $u_j$				| vector containing the priority of each job
+| consumption 			| $q_j$				| vector containing the power usage of each job
+
+
+
+### Parameters file
+The **parameters.jl** file is a julia lang file containing the following definitions:
+
+| Variable (Code) 	| Variable (Paper)	| Definition		|
+|-------------------|-------------------|-------------------|
+| q 				| $Q$				| nominal battery capacity (in Ah) 
+| soc0		 		| $SoC_1$			| initial battery SoC
+| lower_bound		| $\rho$			| minimum accepted battery SoC
+| bat_usage 		| $\gamma$			| maximum charge/discharge battery current (in Ampéres)
+| ef 				| $e$				| battery charge/discharge efficiency
+| v_bat 			| $V_b$				| battery voltage
 
 Please make sure to read the paper and understand the data format and usage before using this data in your research.
