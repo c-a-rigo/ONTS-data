@@ -15,10 +15,8 @@ url = {https://github.com/c-a-rigo/ONTS-data}
 ```
 To use this data set, you will need to have python installed on your computer. 
 
-Each example in the single satellite folder contains the following keys:
-
-### Example file
-The (T)\_(jobs).py file is a Python file containing the following data defining an instance:
+### Example files
+Each example (T)\_(jobs).py in the single satellite folder contains the following keys:
 
 | Variable (Code) 	| Variable (Paper)	| Definition		|
 |-------------------|-------------------|-------------------|
@@ -36,6 +34,7 @@ The (T)\_(jobs).py file is a Python file containing the following data defining 
 | priority 			| $u_j$				| vector containing the priority of each job
 | consumption 			| $q_j$				| vector containing the power usage of each job
 
+In the costellation folder the examples follow the (T)\_(jobs)\_(satellite).py naming convention and the files have the same keys for each constellation satellite plus constellation related flags. 
 
 
 ### Battery parameters file
@@ -49,5 +48,6 @@ The battery parameters contains the following definitions:
 | bat_usage 		| $\gamma$			| maximum charge/discharge battery current (in Ampéres)
 | ef 				| $e$				| battery charge/discharge efficiency
 | v_bat 			| $V_b$				| battery voltage
+
 
 Please make sure to read the paper and understand the data format and usage before using this data in your research.
