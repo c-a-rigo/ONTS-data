@@ -15,7 +15,7 @@ url = {https://github.com/c-a-rigo/ONTS-data}
 ```
 To use this data set, you will need to have python installed on your computer. 
 
-Each example contains the following keys:
+Each example in the single satellite folder contains the following keys:
 
 ### Example file
 The (T)\_(jobs).py file is a Python file containing the following data defining an instance:
@@ -38,8 +38,8 @@ The (T)\_(jobs).py file is a Python file containing the following data defining 
 
 
 
-### Parameters file
-The **parameters.jl** file is a julia lang file containing the following definitions:
+### Battery parameters file
+The battery parameters contains the following definitions:
 
 | Variable (Code) 	| Variable (Paper)	| Definition		|
 |-------------------|-------------------|-------------------|
